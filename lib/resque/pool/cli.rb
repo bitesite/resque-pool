@@ -179,7 +179,6 @@ module Resque
           end
         }
 
-        require 'resque/pool/tasks'
 
         Rake.application = RakeApp.new
         Rake.application.init

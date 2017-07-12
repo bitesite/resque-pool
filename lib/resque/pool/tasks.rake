@@ -16,5 +16,4 @@ namespace :resque do
     require 'resque/pool'
     Resque::Pool.run
   end
-
 end
