@@ -172,13 +172,14 @@ module Resque
 
       def start_pool
         require 'rake'
-        require 'resque/pool/tasks'
 
         self.const_set :RakeApp, Class.new(Rake::Application) {
           def default_task_name # :nodoc:
             "resque:pool"
           end
         }
+
+        require 'resque/pool/tasks'
 
         Rake.application = RakeApp.new
         Rake.application.init
