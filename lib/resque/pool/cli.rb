@@ -186,7 +186,6 @@ module Resque
         Rake.application.load_rakefile
         Rake.application["resque:pool"].invoke
       end
-
     end
   end
 end
