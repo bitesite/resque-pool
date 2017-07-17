@@ -2,7 +2,7 @@ require 'bundler/setup'
 require 'bundler/gem_tasks'
 
 # for loading the example config file in config/resque-pool.yml
-import './lib/resque/pool/tasks.rake'
+require 'resque/pool/tasks'
 
 require 'rspec/core/rake_task'
 

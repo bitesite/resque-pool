@@ -179,7 +179,6 @@ module Resque
           end
         }
 
-
         Rake.application = RakeApp.new
         Rake.application.init
         Rake.application.load_rakefile
